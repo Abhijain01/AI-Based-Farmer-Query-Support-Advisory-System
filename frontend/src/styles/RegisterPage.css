@@ -1,0 +1,120 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(180deg, #1b5e20, #4caf50);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.back-btn:hover {
+  background: white;
+  color: #2e7d32;
+}
+
+.farmer-img {
+  width: 120px;
+  margin: 20px 0;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centers form */
+}
+
+.right-panel h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form-group {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #4caf50;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-bottom: 2px solid #1b5e20;
+}
+
+/* NEXT BUTTON */
+.next-btn {
+  margin-top: 30px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center; /* keeps button centered */
+}
+.next-btn:hover {
+  background: linear-gradient(90deg, #1b5e20, #388e3c);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+  }
+  .left-panel {
+    padding: 40px;
+  }
+  .right-panel {
+    padding: 40px 20px;
+  }
+}

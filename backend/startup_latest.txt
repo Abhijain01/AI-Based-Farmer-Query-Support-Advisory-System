@@ -1,0 +1,57 @@
+C:\Users\abhis\myapp\backend\app.py:45: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+2026-02-09 21:31:40.720502: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-02-09 21:31:46.629381: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[2026-02-09 21:31:53,711] INFO in app: Starting Flask app on port 5000...
+INFO:app:Starting Flask app on port 5000...
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.19:5000
+INFO:werkzeug:Press CTRL+C to quit
+[2026-02-09 21:31:58,393] INFO in app: \u2705 Loaded FAISS index (C:\Users\abhis\myapp\backend\kcc_index_kerala.faiss) with 500000 records.
+INFO:app:\u2705 Loaded FAISS index (C:\Users\abhis\myapp\backend\kcc_index_kerala.faiss) with 500000 records.
+[2026-02-09 21:31:58,394] INFO in app: \u2139\ufe0f sentence-transformers not installed; skipping local embedding generation.
+INFO:app:\u2139\ufe0f sentence-transformers not installed; skipping local embedding generation.
+2026-02-09 21:31:58.437587: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:absl:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2026-02-09 21:31:59,740] INFO in app: \u2705 Loaded disease model from C:\Users\abhis\myapp\backend\plant_disease_identification_model.h5
+INFO:app:\u2705 Loaded disease model from C:\Users\abhis\myapp\backend\plant_disease_identification_model.h5
+[2026-02-09 21:31:59,745] INFO in app: \u2705 Loaded class_indices.json (C:\Users\abhis\myapp\backend\class_indices.json) with 38 classes.
+INFO:app:\u2705 Loaded class_indices.json (C:\Users\abhis\myapp\backend\class_indices.json) with 38 classes.
+C:\Users\abhis\myapp\backend\venv\Lib\site-packages\sklearn\base.py:442: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+C:\Users\abhis\myapp\backend\venv\Lib\site-packages\sklearn\base.py:442: InconsistentVersionWarning: Trying to unpickle estimator RandomForestClassifier from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[2026-02-09 21:32:09,448] INFO in app: \u2705 Loaded fertilizer model from C:\Users\abhis\myapp\backend\fertilizer_model.pkl (mmap)
+INFO:app:\u2705 Loaded fertilizer model from C:\Users\abhis\myapp\backend\fertilizer_model.pkl (mmap)
+C:\Users\abhis\myapp\backend\venv\Lib\site-packages\sklearn\base.py:442: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[2026-02-09 21:32:09,494] INFO in app: \u2705 Loaded soil_encoder.pkl (mmap).
+INFO:app:\u2705 Loaded soil_encoder.pkl (mmap).
+[2026-02-09 21:32:09,498] INFO in app: \u2705 Loaded crop_encoder.pkl (mmap).
+INFO:app:\u2705 Loaded crop_encoder.pkl (mmap).
+[2026-02-09 21:32:09,501] INFO in app: \u2705 Loaded fertilizer_encoder.pkl (mmap).
+INFO:app:\u2705 Loaded fertilizer_encoder.pkl (mmap).
+[2026-02-09 21:34:47,027] INFO in app: Local model predicted: Corn (maize)   healthy (1.00)
+INFO:app:Local model predicted: Corn (maize)   healthy (1.00)
+[2026-02-09 21:34:47,032] INFO in app: Gemini (Vision) trying model: gemini-1.5-pro
+INFO:app:Gemini (Vision) trying model: gemini-1.5-pro
+[2026-02-09 21:34:58,743] WARNING in app: Gemini model gemini-1.5-pro failed: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+WARNING:app:Gemini model gemini-1.5-pro failed: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-02-09 21:34:58,744] INFO in app: Gemini (Vision) trying model: gemini-2.5-flash
+INFO:app:Gemini (Vision) trying model: gemini-2.5-flash
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2026 21:35:17] "POST /chat-image HTTP/1.1" 200 -

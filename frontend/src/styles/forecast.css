@@ -1,0 +1,78 @@
+.forecast-container {
+  padding: 20px;
+}
+
+.weather-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.today-weather {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.alert-card {
+  background: #ffe4e4;
+  border-left: 6px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.crop-section {
+  margin: 20px 0;
+}
+
+.crop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.crop-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.crop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.today-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f9f0; /* same greenish tone as welcome box */
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.today-left {
+  flex: 1;
+}
+
+.today-weather {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.today-weather img {
+  width: 80px;
+  height: 80px;
+}
+
+.today-chart {
+  flex: 1;
+  min-width: 300px;
+  height: 220px;
+}

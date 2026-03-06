@@ -1,0 +1,25 @@
+/* index.css */
+@import "leaflet/dist/leaflet.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+} 
+/* Force ALL leaflet controls (zoom, geosearch, etc.) above the map */
+.leaflet-control {
+  z-index: 9999 !important;
+}
+/* Style the GeoSearch bar */
+.leaflet-control.geosearch {
+  position: absolute !important;
+  top: 10px !important;
+  left: 50px !important;
+  z-index: 9999 !important;
+  background: white !important;
+  border-radius: 6px;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}

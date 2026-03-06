@@ -1,0 +1,200 @@
+/* 🌿 Page Base Styling */
+.fertilizer-page {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f5fff4, #ffffff);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ✨ Hero / Top News Section */
+.hero-section {
+  animation: fadeIn 1.2s ease-in-out;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e5128;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+}
+
+/* 📰 News Cards */
+.news-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+.news-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.news-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.news-card a {
+  color: #228B22;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.news-card a:hover {
+  color: #1e5128;
+}
+
+/* 📊 Price Checker & Recommendation Sections */
+.section {
+  background: #ffffff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e5128;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🧪 Form Styles */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.8px solid #d1e7d3;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1e5128;
+  box-shadow: 0 0 0 3px rgba(30, 81, 40, 0.2);
+}
+
+select {
+  background-color: #f9fff6;
+}
+
+/* 🌿 Buttons */
+button {
+  padding: 0.9rem 1.2rem;
+  background: linear-gradient(135deg, #1e5128, #2a9134);
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2a9134, #1e5128);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ✅ Recommendation Result */
+.recommendation-result {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e5128;
+  text-align: center;
+  padding: 1rem;
+  background: #e8f9ee;
+  border-radius: 0.8rem;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}

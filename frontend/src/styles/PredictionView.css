@@ -1,0 +1,102 @@
+.disease-prediction-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.upload-section {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the label to look like a button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.file-name {
+  font-style: italic;
+  color: #555;
+}
+
+.image-preview {
+  margin-top: 1rem;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.predict-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.predict-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.predict-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.result-container {
+  margin-top: 2rem;
+}
+
+.prediction-result {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.disease-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.confidence-score {
+  font-size: 1rem;
+  color: #333;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+}

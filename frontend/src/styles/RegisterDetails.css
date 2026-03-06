@@ -1,0 +1,202 @@
+.register-details {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(180deg, #2e7d32, #66bb6a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.side-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  color: #2e7d32;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.side-back-btn:hover {
+  background: #e0e0e0;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.form-heading {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 300px;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: -425px;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-left: -5px;
+  display: block;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2e7d32;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 2px;
+  width: 120px;
+  background-color: #4caf50;
+  margin: 30px 0;
+  margin-left: 0;
+}
+
+/* Crop counter */
+.crop-counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.crop-counter-controls button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.crop-counter-controls span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Crop section */
+.crop-section {
+  border: 1px dashed #4caf50;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.map-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: 600px;
+  max-width: 90%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.select-location-btn {
+  margin-top: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+.leaflet-control-geosearch {
+  max-width: 250px;
+}
+

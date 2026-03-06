@@ -1,0 +1,114 @@
+/* Base body */
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #4A9228, #162C0C);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Middle background image box */
+.image-box {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo on top-left corner */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Glassy login card */
+.login-card {
+  background: rgba(138, 233, 84, 0.3);
+  backdrop-filter: blur(9px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;   /* <--- makes children fill width */
+  
+}
+
+/* Heading */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.login-card h4 {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-size: 14px;
+  align-items: left;
+}
+/* Phone input */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input-group input {
+  width: 85%;
+  padding: 12px 40px 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(124, 120, 120, 0.5);
+  outline: none;
+  background-color: transparent; /* Make the input background transparent */
+  color: #252424;
+}
+.phone-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;                      
+  transform: translateY(-50%);   
+  font-size: 18px;
+  color: #444;
+  pointer-events: none; 
+
+}
+
+/* Terms */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.checkbox a {
+  color: #3a94ee;
+  text-decoration: none;
+}
+
+/* Button */
+.send-otp {
+  background: linear-gradient(90deg, #4A9228, #2a6416);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.send-otp:hover {
+  transform: scale(1.05);
+}

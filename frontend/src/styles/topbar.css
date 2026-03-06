@@ -1,0 +1,105 @@
+.topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #eaf1e4; /* light green background */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 0 0 12px 0px; /* soft rounded bottom like your design */
+}
+
+/* Left Section (Logo or App name) */
+.topbar-left {
+  font-weight: 700;
+  font-size: 20px;
+  color: #183b12;
+}
+
+/* Right Section (location, lang, profile) */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Location style */
+.location {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #183b12;
+  background: #DCF0CE; /* subtle pill background */
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.location::before {
+  content: "📍";
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+/* Language dropdown */
+.lang {
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  background: #DCF0CE;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #183b12;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: #DCF0CE;
+  padding: 4px 10px 4px 4px;
+  border-radius: 20px;
+}
+
+.profile-icon {
+  color: #183b12;
+  margin-left: 2px;
+}
+
+.profile span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #183b12;
+}
+
+/* Profile menu dropdown */
+.profile-menu {
+  position: absolute;
+  right: 0;
+  top: 56px;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.profile-menu button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  border-radius: 6px;
+}
+
+.profile-menu button:hover {
+  background: #f0f0f0;
+}
